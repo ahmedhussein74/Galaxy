@@ -43,7 +43,7 @@
     animation: animate 100s linear infinite;
 }
 .sun{
-    background: url("img/venus.jpg") center;
+    background: url("img/Venus.jpg") center;
     box-shadow: 0 0 40px #ffb334;
     filter: brightness(2);
 }
