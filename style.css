@@ -1,0 +1,141 @@
+.hello{
+    height: 100vh;
+    background-image: url("img/galaxy.jpg");
+    background-size: cover;
+    color: white;
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.hello span{
+    color: orangered;
+}
+.big{
+    background: #eee;
+    border-radius: 15px;
+}
+.planet{
+    display: grid;
+    grid-template-columns: 50% 420px;
+    grid-template-rows: 420px;
+    justify-content: space-around;
+}
+.big:hover{
+    background: #212529;
+    color: white;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -2048px 0;
+    }
+}
+.planet :first-child{
+    font-size: 20px;
+}
+.planet :nth-child(2){
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: animate 100s linear infinite;
+}
+.sun{
+    background: url("img/venus.jpg") center;
+    box-shadow: 0 0 40px #ffb334;
+    filter: brightness(2);
+}
+.mercury{
+    background: url("img/mercury.jpg") center;
+    box-shadow: 0 0 40px #6f403c;
+}
+.venus{
+    background: url("img/Venus.jpg") center;
+    box-shadow: 0 0 40px #b95807;
+}
+.earth{
+    background: url("img/earth.jpg") center;
+    box-shadow: 0 0 40px #142050;
+}
+.mars{
+    background: url("img/mars.jpg") center;
+    box-shadow: 0 0 40px #d23a21;
+}
+.jupiter{
+    background: url("img/jupiter.jpg") center;
+    box-shadow: 0 0 40px #d3a170;
+}
+.saturn{
+    background: url("img/saturn.jpg") center;
+    box-shadow: 0 0 40px #d5bc94;
+}
+.uranus{
+    background: url("img/uranus.png") center;
+    box-shadow: 0 0 40px #57bfdf;
+}
+.neptune{
+    background: url("img/neptune.png") center;
+    box-shadow: 0 0 40px #2c76e9;
+}
+.pluto{
+    background: url("img/pluto.png") center;
+    box-shadow: 0 0 40px #bfa48d;
+}
+.moon{
+    width: 650px;
+    height: 550px;
+    margin-left: 45%;
+}
+
+/* small */
+@media screen and (max-width :425px ){
+    .hello{
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .planet{
+        grid-template-columns: 50% 150px;
+        grid-template-rows: 170px;
+        justify-content: space-between;
+    }
+    .planet :first-child{
+        font-size: 7.5px;
+    }
+    .big{
+        background: #212529;
+        color: white;
+        border-radius: 0px;
+    }
+    .moon{
+        width: 200px;
+        height: 200px;
+        margin-left: 25%;
+        margin-top: 50px;
+    }
+}
+ /* medium */
+@media screen and (max-width :768px ) and (min-width:426px){
+    .planet{
+        grid-template-columns: 50% 220px;
+        grid-template-rows: 220px;
+        justify-content: space-between;
+    }
+    .planet :first-child{
+        font-size: 13px;
+    }
+    .big{
+        background: #212529;
+        color: white;
+    }
+    .hello{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    .moon{
+        width: 350px;
+        height: 300px;
+        margin-left: 40%;
+    }
+}
